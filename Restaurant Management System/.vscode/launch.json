@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Sample.Main",
+            "projectName": "SampleProject_98ac5b66",
+            "vmArgs": "--module-path \"C:/Users/Fahim/Downloads/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "Server.Server",
+            "projectName": "SampleProject_98ac5b66",
+            "vmArgs": "--module-path \"C:/Users/Fahim/Downloads/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "Server.Server",
+            "projectName": "SampleProject_86063ddc",
+            "vmArgs": "--module-path \"C:/Users/Fahim/Downloads/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Sample.Main",
+            "projectName": "SampleProject_86063ddc",
+            "vmArgs": "--module-path \"C:/Users/Fahim/Downloads/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--module-path \"C:/Users/Fahim/Downloads/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "projectName": "SampleProject_86063ddc",
+            "vmArgs": "--module-path \"C:/Users/Fahim/Downloads/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

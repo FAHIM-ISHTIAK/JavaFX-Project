@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="600.0" style="-fx-background-color: #d3e1eb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.OrderConfirmController">
+   <children>
+      <TableView fx:id="table" layoutX="69.0" layoutY="113.0" prefHeight="259.0" prefWidth="457.0" style="-fx-background-color: #ffffa7; -fx-border-color: black;">
+        <columns>
+          <TableColumn fx:id="columnName" prefWidth="456.8000122070313" text="Food name" />
+        </columns>
+      </TableView>
+      <Button fx:id="finalize" layoutX="416.0" layoutY="435.0" mnemonicParsing="false" onAction="#finalise" prefHeight="38.0" prefWidth="110.0" style="-fx-border-color: black;" text="Finalize" />
+      <Button fx:id="Back" layoutX="69.0" layoutY="430.0" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="96.0" style="-fx-border-color: black;" text="Back" />
+      <Text fill="#c40909" layoutX="194.0" layoutY="69.0" stroke="#dc0303" strokeType="OUTSIDE" text="Finalize The Deal" textAlignment="CENTER" wrappingWidth="207.7366943359375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

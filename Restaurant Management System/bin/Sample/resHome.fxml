@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.RestaurantHomeController">
+   <top>
+      <AnchorPane prefHeight="149.0" prefWidth="682.0" style="-fx-background-color: #85fffd;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#7e12d7" layoutX="124.0" layoutY="59.0" stroke="#8c29d6" strokeType="OUTSIDE" text="Welcome To The Restaurant Managment">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="textName" fill="#111b84" layoutX="195.0" layoutY="117.0" stroke="#2717d4" strokeType="OUTSIDE" text="RESTAURANT NAME">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="Order" layoutX="11.0" layoutY="86.0" mnemonicParsing="false" onAction="#order" prefHeight="38.0" prefWidth="143.0" style="-fx-border-color: black;" text="Orders">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Confirm" layoutX="504.0" layoutY="99.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" style="-fx-border-color: black;" text="Confirm All" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="492.0" prefWidth="245.0" style="-fx-background-color: #85fffd;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Back" layoutX="47.0" layoutY="398.0" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="146.0" style="-fx-border-color: black;" text="Back" />
+            <Text fill="#f40505" layoutX="160.0" layoutY="67.0" stroke="#c40000" strokeType="OUTSIDE" text="Whenever you will receive an order ,you will be redirected to the Finalize order Page" wrappingWidth="365.3367462158203">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="195.0" layoutX="222.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img8-fotor-bg-remover-20230913194955.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="492.0" prefWidth="480.0" style="-fx-background-color: #85fffd;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.searchFoodController">
+   <top>
+      <AnchorPane prefHeight="267.0" prefWidth="735.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#ff0303" layoutX="207.0" layoutY="40.0" stroke="RED" strokeType="OUTSIDE" text="Choose any option" textAlignment="CENTER" wrappingWidth="320.60858154296875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="searchByName" layoutX="45.0" layoutY="84.0" mnemonicParsing="false" onAction="#searchByName" prefHeight="44.0" prefWidth="139.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="Search By name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchInRes" layoutX="207.0" layoutY="83.0" mnemonicParsing="false" onAction="#searchInRestaurant" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="Search In Restaurant">
+               <font>
+                  <Font size="13.5" />
+               </font>
+            </Button>
+            <Button fx:id="searchByCat" layoutX="374.0" layoutY="82.0" mnemonicParsing="false" onAction="#searchByCategory" prefHeight="42.0" prefWidth="144.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="Search By Category">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchCatInRes" layoutX="541.0" layoutY="83.0" mnemonicParsing="false" onAction="#searchByCatInRes" prefHeight="39.0" prefWidth="162.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="Search Category In Restaurant">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchByPrice" layoutX="45.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchByPrice" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="Search By Price Range" />
+            <Button fx:id="searchByPriceInRes" layoutX="207.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchBypriceInRes" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="Search By Price In Restaurant">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="costliestFood" layoutX="376.0" layoutY="152.0" mnemonicParsing="false" onAction="#costly" prefHeight="43.0" prefWidth="140.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="Costliest Food item">
+               <font>
+                  <Font size="13.5" />
+               </font>
+            </Button>
+            <Button fx:id="ResList" layoutX="541.0" layoutY="152.0" mnemonicParsing="false" onAction="#listOfres" prefHeight="43.0" prefWidth="162.0" style="-fx-background-color: #87CEEB; -fx-border-color: black;" text="List of Restaurant">
+               <font>
+                  <Font size="13.5" />
+               </font>
+            </Button>
+            <TextField fx:id="txtfield1" layoutX="45.0" layoutY="216.0" prefHeight="28.0" prefWidth="189.0" />
+            <TextField fx:id="txtfield2" layoutX="273.0" layoutY="216.0" prefHeight="28.0" prefWidth="189.0" />
+            <TextField fx:id="txtfield3" layoutX="516.0" layoutY="216.0" prefHeight="28.0" prefWidth="189.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="415.0" prefWidth="735.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="confirm" layoutX="574.0" layoutY="342.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: #90EE90; -fx-border-color: black;" text="Confirm">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="40.0" layoutY="341.0" mnemonicParsing="false" onAction="#Back" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #ff7276; -fx-border-color: black;" text=" Back to Main Menu" />
+            <TableView fx:id="table" layoutX="13.0" layoutY="2.0" prefHeight="326.0" prefWidth="698.0" style="-fx-background-color: #ffffbf;">
+              <columns>
+                <TableColumn fx:id="columnCat" prefWidth="200.800048828125" text="Category" />
+                <TableColumn fx:id="columnName" prefWidth="219.199951171875" text="Name" />
+                  <TableColumn fx:id="columnPrice" prefWidth="122.40008544921875" text="Price" />
+                  <TableColumn fx:id="columnID" prefWidth="153.60001220703123" text="Restaurant ID" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

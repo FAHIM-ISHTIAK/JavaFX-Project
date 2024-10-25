@@ -1,0 +1,4 @@
+KFC,1
+IHOP,2
+Starbucks,3
+McDonalds,4
